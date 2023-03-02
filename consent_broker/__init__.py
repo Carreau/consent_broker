@@ -20,7 +20,7 @@ from datetime import datetime, timedelta
 class Broker:
     CONF = Path("~").expanduser() / ".consent_broker.json"
 
-    def now():
+    def now(self):
         return datetime.now()
 
     def _load(self):
